@@ -20,14 +20,33 @@ nerdy-take-home/
 
 ## How to Run
 1. Make sure you have Python 3.8 or newer installed on your system.
-   - If you receive a version error when installing requirements, use the following to force use of Python 3
+   
+   **Install Python (if needed):**
+   - **Windows**: Download from https://python.org/downloads/ or use:
+     ```
+     winget install Python.Python.3.12
+     ```
+   - **Mac**: Use Homebrew:
+     ```
+     brew install python@3.12
+     ```
+   - **Linux (Ubuntu/Debian)**:
+     ```
+     sudo apt update && sudo apt install python3.12 python3.12-pip
+     ```
+   
+   **Then upgrade pip and tools:**
    ```
-   python3 -m pip install -r requirements.txt
+   python -m pip install --upgrade pip setuptools wheel
    ```
 2. Open your terminal and navigate to the root folder.
 3. Install the required Python packages by running:
    ```
    pip install -r requirements.txt
+   ```
+   - If you receive a version error when installing requirements, use the following to force use of Python 3
+   ```
+   python3 -m pip install -r requirements.txt
    ```
 4. Launch the Streamlit app by running:
    ```
