@@ -21,7 +21,7 @@ nerdy-take-home/
 
 ## How to Run
 1. Make sure you have Python 3.8 or newer installed on your system.
-2. Open your terminal and navigate to the `nerdy_prototype` folder.
+2. Open your terminal and navigate to the root folder.
 3. Install the required Python packages by running:
    ```
    pip install -r requirements.txt
@@ -35,7 +35,7 @@ nerdy-take-home/
 **Troubleshooting:**
 - If you get a `ModuleNotFoundError`, make sure you installed all requirements and are running the command in the correct folder.
 - If Streamlit does not open automatically, copy and paste the provided local URL into your browser.
-- If you have issues with file paths, ensure your terminal is in the `nerdy_prototype` directory before running the commands.
+- If you have issues with file paths, ensure your terminal is in the correct directory before running the commands.
 
 
 ## Contact
