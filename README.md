@@ -9,7 +9,6 @@ nerdy-take-home/
 ├── data/
 │   └── cohort_performance_2024.csv
 ├── pages/
-│   ├── 1_Landing.py
 │   ├── 2_Cohort_Analysis.py
 │   ├── 3_Onboarding_Personalization.py
 │   └── 4_AI_Insights.py
