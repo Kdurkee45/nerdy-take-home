@@ -20,6 +20,10 @@ nerdy-take-home/
 
 ## How to Run
 1. Make sure you have Python 3.8 or newer installed on your system.
+   - If you receive a version error when installing requirements, use the following to force use of Python 3
+   ```
+   python3 -m pip install -r requirements.txt
+   ```
 2. Open your terminal and navigate to the root folder.
 3. Install the required Python packages by running:
    ```
