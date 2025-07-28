@@ -1,0 +1,14 @@
+[server]
+headless = false
+enableCORS = false
+port = 8501
+enableXsrfProtection = false
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "dark"
+
+[client]
+showSidebarNavigation = true
