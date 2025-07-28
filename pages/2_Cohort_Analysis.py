@@ -36,7 +36,7 @@ def load_data():
     # Clean 'Conversion Funnel Entries' column to ensure numeric values
     if 'Conversion Funnel Entries' in df.columns:
         df['Conversion Funnel Entries'] = df['Conversion Funnel Entries'].astype(str).str.replace(',', '', regex=False).str.replace(' ', '', regex=False).replace('', '0').astype(float)
-    # Add Month and Year columns by splitting 'Cohorts' robustly
+    # Add Month and Year columns by splitting 'Cohorts'
     if 'Cohorts' in df.columns:
         df['Cohorts'] = df['Cohorts'].fillna('Unknown Unknown').astype(str).str.strip()
         split_cohorts = df['Cohorts'].str.split(' ', n=1, expand=True)
@@ -86,7 +86,7 @@ if "Conversion %" in df.columns:
         )
     st.pyplot(fig3)
 
-# Section 3: Interactive Funnel Drop-Off Visualization with Data Table
+# Section 3: Interactive Funnel Visualization with Data Table
 funnel_steps = ["Step 1", "Step 2", "Step 3", "Step 4", "Conversion %"]
 st.subheader("🔁 Conversion Funnel Analysis")
 months = df['Month'].unique().tolist()
@@ -140,7 +140,7 @@ fig4.update_traces(
 )
 st.plotly_chart(fig4, use_container_width=True)
 
-# Optional: Table view
+# Optional Table view
 with st.expander("🔎 View Raw Step Data"):
     # Get raw count for step 1
     if 'Conversion Funnel Entries' in filtered_df.columns:

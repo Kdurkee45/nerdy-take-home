@@ -15,18 +15,19 @@ st.markdown("""
 
 st.markdown("- - -")
 
-# load sample data
+# load data
 @st.cache_data
 def load_data():
         df = pd.read_csv("data/cohort_performance_2024.csv")
         return df
 df = load_data()
 
-# example summary metrics
-col1, col2, col3 = st.columns(3)
-col1.metric("Avg Client LTV","$1,420","+25% v. baseline")
-col2.metric("Overall Conversion Rate","14.6%","-3.2% v. July")
-col3.metric("Avg Retention (weeks)","5.2","+18% in August")
+# summary metrics
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("ARPM","$335","+14% YoY")
+col2.metric("Active Members","40,500","+8% QoQ (+14% YoY)")
+col3.metric("Conversion Rate","2.20%","-0.5% v. July")
+col4.metric("Avg. Tenure (Mo.)","3.2","+45% v. May")
 
 st.markdown("### 🧭 Dashboard Overview")
 st.markdown("""

@@ -30,7 +30,7 @@ def load_data():
     # Clean 'Conversion %' column to ensure numeric values
     if 'Conversion %' in df.columns:
         df['Conversion %'] = df['Conversion %'].str.replace('%', '', regex=False).astype(float) / 100
-    # Add Month and Year columns by splitting 'Cohorts' robustly
+    # Add Month and Year columns by splitting 'Cohorts'
     if 'Cohorts' in df.columns:
         df['Cohorts'] = df['Cohorts'].fillna('Unknown Unknown').astype(str).str.strip()
         split_cohorts = df['Cohorts'].str.split(' ', n=1, expand=True)
@@ -80,7 +80,7 @@ st.plotly_chart(fig, use_container_width=True)
 # Divider
 st.markdown("---")
 
-# Sidebar mock: Personalization Controls
+# Mock Personalization Controls
 st.subheader("🧩 Customize Onboarding Experience (Mock Controls)")
 
 with st.form("personalization_form"):
