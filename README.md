@@ -2,7 +2,7 @@
 This product is a Streamlit-based web application designed to be a v1 prototype wireframe for increasing new client conversion percentage (%) across monthly cohorts.
 
 ## Project Structure
-nerdy_prototype/
+nerdy-take-home/
 ├── .streamlit/
 │   └── config.toml
 ├── data/
